@@ -30,9 +30,9 @@ class DetailTableViewController: UIViewController, WebserviceHelperDelegate {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "\(episode?.Title!)"
-    }
+//    override func viewWillAppear(animated: Bool) {
+//       // self.navigationController?.navigationBar.topItem?.title = "\(episode?.Title!)"
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

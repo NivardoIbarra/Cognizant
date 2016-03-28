@@ -22,20 +22,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="83" id="cAF-oe-vxl" customClass="CustomCell" customModule="Test_Code_Cognizant" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="83" id="cAF-oe-vxl" customClass="CustomCell" customModule="Test_Code_Cognizant" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cAF-oe-vxl" id="8OP-0R-Zcd">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="82.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="82.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYo-Q6-D9Z">
-                                                    <rect key="frame" x="14" y="31" width="239" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYo-Q6-D9Z">
+                                                    <rect key="frame" x="11" y="31" width="545" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VYo-Q6-D9Z" firstAttribute="top" secondItem="8OP-0R-Zcd" secondAttribute="topMargin" constant="23" id="1JK-nn-1uu"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VYo-Q6-D9Z" secondAttribute="bottom" constant="22.5" id="8zw-0q-jeQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VYo-Q6-D9Z" secondAttribute="trailing" constant="3" id="Ouw-11-Q5I"/>
+                                                <constraint firstItem="VYo-Q6-D9Z" firstAttribute="leading" secondItem="8OP-0R-Zcd" secondAttribute="leadingMargin" constant="3" id="Wu3-q4-bdq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="lblTitle" destination="VYo-Q6-D9Z" id="0ZF-yp-oVA"/>
@@ -91,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="1133" y="429"/>
         </scene>
-        <!--some-->
+        <!--Detail-->
         <scene sceneID="cYq-08-085">
             <objects>
                 <viewController id="g3i-4U-Man" customClass="DetailTableViewController" customModule="Test_Code_Cognizant" customModuleProvider="target" sceneMemberID="viewController">
@@ -178,7 +184,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="some" id="icj-5Z-tOu"/>
+                    <navigationItem key="navigationItem" title="Detail" id="icj-5Z-tOu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="lblEpisode" destination="yg2-Za-3Na" id="AhB-Kn-NzU"/>

@@ -79,11 +79,12 @@ class MainTableViewController: UIViewController, WebserviceHelperDelegate {
             let detailViewController = segue.destinationViewController as! DetailTableViewController
             let index = self.tableView.indexPathForSelectedRow!
             detailViewController.episode = self.episodes[index.row]
+            self.navigationController?.navigationBar.topItem?.title = "Back"
         }
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Season "
+        return "Season \(currentSeason)"
     }
     
     
